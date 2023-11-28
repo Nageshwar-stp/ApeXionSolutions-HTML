@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 40px;
 }
 .nav-menu {
     display: flex;
@@ -43,4 +44,67 @@
 
 .nav-menu-item:hover {
     border-bottom: 1px solid var(--accent);
+}
+.nav-action-btn {
+    padding: 8px 25px;
+    font-size: 15px;
+    border-radius: 10px;
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.nav-action-btn i {
+    font-size: 18px;
+}
+.nav-action-btn:hover {
+    background: var(--accent-fade);
+}
+
+.nav-open-btn,
+.nav-close-btn {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .nav{
+        width: 95%;
+    }
+    .nav-logo {
+        height: 60px;
+    }
+    .nav-close-btn,
+    .nav-open-btn {
+        display: block;
+    }
+    .nav-menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        padding: 50px 50px;
+        background: rgb(0,0,0,0.8);
+        flex-direction: column;
+        justify-content: flex-start;
+        display: none;
+        animation: slide-in 0.5s ease;
+    }
+
+    @keyframes slide-in {
+        0% {
+            transform: translateX(100px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    .nav-action {
+        gap: 20px;
+    }
 }
