@@ -1,8 +1,9 @@
 .cover {
-    background: url(../images/cover-wrap.jpg);
+    background: url(../images/apexion-cover/3-1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    background-attachment: fixed;
     width: 100%;
     min-height: 95vh;
     display: flex;
