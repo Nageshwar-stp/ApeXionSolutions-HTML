@@ -149,3 +149,38 @@
         height: 350px;
     }
 }
+
+.details {
+    width: 100%;
+    padding: 100px 0px;
+    background: black;
+}
+.details-wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+.details-ruler {
+    width: 100px;
+    height: 2px;
+    background: var(--accent);
+    margin-bottom: 60px;
+}
+.details-head {
+    font-size: 30px;
+    color: var(--accent);
+    padding-bottom: 30px;
+}
+.details-tag {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.details-text {
+    font-size: 16px;
+    line-height: 25px;
+}
+
